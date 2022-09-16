@@ -2,39 +2,92 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <title>My Website</title>
+    <title>My Website - About Me</title>
     <link rel="stylesheet" href="style.css"/>
+    <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
 </head>
-<body>
+<body class="body aboutme">
     <header>
-        <div class="sx"> 
+        <div class="sx">
             <div class="logo">
-                <img src="grilled-cactus.png"> 
+                <img src="cactus_1.png">
             </div>
             <p>Cactus Graphics</p>
         </div>
         <div class="menu">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="aboutme.html">About Me</a>
-                <a href="#">Portfolio</a>
-            </nav>
-            <div class="burger">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>  
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="burger">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="nav-value">
+                    <nav>
+                        <a class="line1" href="index.html">About Me</a>
+                        <a class="line2" href="myskills.html">My Skills</a>
+                        <a class="line3" href="portfolio.html">Portfolio</a>
+                        <a class="line4" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="dx">
-            <a href="#" class="contact-link">Contact</a>
+            <a href="contact.html" class="contact-link">Contact</a>
         </div>
     </header>
+    <section class="hero" id="about">
+        <img
+          src="me.jpg"
+          alt="giada-cipriani"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+        </div>
+    </section>
 
-    <button class="button">
-        SCOPRI CHI SONO
-        <div class="button__horizontal"></div>
-        <div class="button__vertical"></div>
-    </button>
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+          autem deleniti cupiditate molestias quis unde quae totam porro dicta
+          iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          nostrum dolor minus, libero delectus praesentium perferendis
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+          consequuntur labore? Ea totam voluptas amet!
+        </p>
+    </section>
 
+    <footer class="aboutme-footer">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100010129545751" class="icon facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/giada-cipriani-430b2b225/" class="icon linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/so.sweet_viska_/" class="icon instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/GiadaCreation" class="icon github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="copyright">Giada Cipriani © 2022</p>
+    </footer>
 </body>
 </html>
