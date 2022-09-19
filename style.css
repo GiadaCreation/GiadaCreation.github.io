@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 * {
@@ -409,7 +410,7 @@ header .contact-link {
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: auto;
-  margin-top: 100px;
+  margin-top: 10%;
   margin-bottom: 40px;
 }
 .container_contactform .content {
@@ -460,7 +461,7 @@ header .contact-link {
 .content .left-side .details .text-two a{
 	font-size: 14px;
 	color: #557B83;
-	
+
 }
 
 .container_contactform .content .right-side {
@@ -515,14 +516,19 @@ header .contact-link {
 @media (max-width: 950px) {
   .container_contactform {
     width: 90%;
+    margin-top: 25%;
     padding: 30px 40px 40px 35px;
   }
+
   .container_contactform .content .right-side {
     width: 75%;
     margin-left: 55px;
   }
-}
-@media (max-width: 820px) {
+
+  .right-side .button{
+    margin-left: 20%;
+  }
+
   .container_contactform {
     height: 100%;
   }
@@ -530,7 +536,6 @@ header .contact-link {
     flex-direction: column-reverse;
   }
   .container_contactform .content .left-side {
-    width: 100%;
     flex-direction: row;
     margin-top: 40px;
     justify-content: center;
@@ -540,7 +545,6 @@ header .contact-link {
     display: none;
   }
   .container_contactform .content .right-side {
-    width: 100%;
     margin-left: 0;
   }
 }
@@ -606,14 +610,14 @@ ul {
   list-style-type: none;
 }
 
-ul li::before {   
-  content: '';   
-  display: inline-block;   
-  height: 25px;   
-  width: 25px;    
-  background-size: 25px;   
-  background-image: url('assets/cactus_logo_black.png');   
-  background-repeat: no-repeat;   
+ul li::before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: 25px;
+  background-image: url('assets/cactus_logo_black.png');
+  background-repeat: no-repeat;
   margin-right: 10px;
   background-position: center center;
   vertical-align: middle;
@@ -637,10 +641,10 @@ ul li::before {
   .more-skills{
     padding: 1rem 2rem;
   }
-  
+
 }
 
-/* My skills Pages */ 
+/* My skills Pages */
 .skills {
   max-width: 68.75rem;
   margin: auto;
@@ -729,6 +733,11 @@ ul li::before {
   .projects-title {
     margin-top: 30px;
   }
+
+  .project-card {
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -739,6 +748,7 @@ footer {
   padding: 20px 0;
   background-color: #557b83;
   color: #4b4c4d;
+  position: absolute;
 }
 
 .footer-portfolio,
@@ -866,6 +876,7 @@ footer .copyright {
 @media (max-width: 820px) {
   footer{
     position: relative;
+    bottom: unset;
   }
-  
+
 }
