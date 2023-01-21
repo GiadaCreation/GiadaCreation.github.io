@@ -261,11 +261,11 @@ body > h1 {
 }
 
 h1.homepage-title{
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 h1.skills-title{
-  margin-top: 65px;
+  margin-top: 120px;
 }
 
 .button {
@@ -482,7 +482,7 @@ h1.skills-title{
 }
 
 .container_contactform .content .right-side {
-  width: 75%;
+  width: 55%;
   margin-left: 75px;
 }
 .container_contactform .right-side .topic-text {
@@ -533,7 +533,6 @@ h1.skills-title{
 @media (max-width: 950px) {
   .container_contactform {
     width: 90%;
-    margin-top: 25%;
     padding: 30px 40px 40px 35px;
   }
 
@@ -586,7 +585,14 @@ h1.skills-title{
 
 .bio p {
   line-height: 1.7rem;
-  padding: 0.3rem 0;
+  text-align: justify;
+  padding: 10%;
+  padding-top: 0;
+}
+
+.bio h2.bio-title{
+  padding: 10%;
+  padding-bottom: 3%
 }
 
 .aboutme{
@@ -596,7 +602,7 @@ h1.skills-title{
 
 .more-about,
 .more-skills {
-  width: 85%;
+  width: 55%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
@@ -900,6 +906,18 @@ footer .copyright {
   footer{
     position: relative;
     bottom: unset;
+  }
+
+}
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  footer{
+    position: relative;
   }
 
 }
