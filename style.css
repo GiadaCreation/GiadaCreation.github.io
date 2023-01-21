@@ -766,7 +766,7 @@ footer {
   color: #4b4c4d;
 }
 
-footer:not(.footer-index){
+footer:not(.footer-index,.footer-myskills){
   position: absolute;
 }
 
