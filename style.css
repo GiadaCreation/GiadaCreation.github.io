@@ -253,7 +253,11 @@ header .contact-link {
   text-align: right;
   margin: 20px;
 }
-
+body > h1 {
+  margin-top: 80px;
+  text-align: center;
+  text-transform: uppercase
+}
 .button {
   --offset: 10px;
   --border-size: 2px;
@@ -413,7 +417,7 @@ header .contact-link {
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: auto;
-  margin-top: 10%;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 .container_contactform .content {
@@ -564,7 +568,6 @@ header .contact-link {
 
 .hero img {
   height: 30rem;
-  margin-top: 80px;
 }
 
 .bio h1 {
@@ -647,12 +650,11 @@ ul li::before {
 
 }
 
-/* My skills Pages */
+/* My skills Page */
 .skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 80px;
 }
 
 .skill-header {
@@ -670,7 +672,6 @@ ul li::before {
 
 /*Pagina MyProjects*/
 .projects {
-  padding: 32px 0;
   margin-top: 2rem;
 }
 
@@ -712,7 +713,7 @@ ul li::before {
   margin: 10px;
 }
 
-.project-card h3,
+.project-card h2,
 .project-container > a{
   color: #557b83;
 }
