@@ -646,6 +646,10 @@ h1.skills-title{
   margin-top: 20px;
 }
 
+.more-about section{
+  padding-bottom: 20px;
+}
+
 ul {
   list-style-type: none;
 }
