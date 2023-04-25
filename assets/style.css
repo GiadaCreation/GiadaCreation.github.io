@@ -810,15 +810,13 @@ footer {
   color: #4b4c4d;
 }
 
-footer:not(.footer-index){
+footer:not(.footer-myskills, .footer-index){
   position: absolute;
 }
-/*
 .footer-portfolio,
 .footer-contact{
   position: absolute;
 }
-*/
 .footer-myskills {
   position: relative;
   margin-top: 20px;
