@@ -720,6 +720,83 @@ nav > ul li::before {
   height: 11.25rem;
 }
 
+.first-set, .second-set{
+  display: flex;
+  justify-content: center;
+}
+
+.second-set{
+  margin-top: 30px;
+}
+
+.photo {
+  margin: 15px;
+}
+
+.photo img{
+  object-fit: cover;
+  box-shadow: 10px 15px 25px 0 rgb(85,123,131);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.photo .glow-wrap{
+  overflow: hidden;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow{
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+}
+
+.photo h3{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-25%, -65%);
+  margin: 0;
+  color: #557b83;
+  line-height: 1.2;
+}
+
+@media (max-width: 820px) {
+  .first-set, .second-set{
+    flex-direction: column;
+  }
+
+  .second-set{
+    margin-top: 0;
+  }
+
+  .photo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 /*Pagina MyProjects*/
 .projects {
   margin-top: 2rem;
@@ -771,6 +848,7 @@ nav > ul li::before {
 .more-skills{
   margin: auto;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .more-about{
