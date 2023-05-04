@@ -711,6 +711,10 @@ nav > ul li::before {
   margin-bottom: 1rem;
 }
 
+.skills-wrapper {
+  margin-top: 50px;
+}
+
 .skills-wrapper img {
   padding: 1.25rem;
 }
@@ -847,8 +851,8 @@ nav > ul li::before {
 
 .more-skills{
   margin: auto;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-top: 100px;
 }
 
 .more-about{
