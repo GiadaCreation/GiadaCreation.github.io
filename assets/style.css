@@ -20,6 +20,14 @@ body {
   background: #c8e8e9;
 }
 
+#page-container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
 header {
   display: flex;
   height: 65px;
@@ -271,7 +279,7 @@ header .contact-link {
   margin: 20px;
 }
 
-body > h1 {
+h1 {
   margin-top: 120px;
   text-align: center;
   text-transform: uppercase
@@ -571,6 +579,7 @@ h1.skills-title{
   .container_contactform .content .left-side {
     flex-direction: row;
     margin-top: 40px;
+    margin-bottom: 120px;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -899,6 +908,7 @@ footer:not(.footer-myskills, .footer-index){
 .footer-contact{
   position: absolute;
 }
+
 .footer-myskills {
   position: relative;
   margin-top: 20px;
@@ -1035,6 +1045,7 @@ footer .copyright {
 
   footer{
     position: relative;
+    bottom: unset;
   }
 
 }
